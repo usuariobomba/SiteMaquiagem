@@ -1,4 +1,4 @@
-import { ShieldCheck, Smartphone, Sparkles, Clock } from 'lucide-react';
+import { ShieldCheck, Smartphone, Sparkles, Clock, BookOpen, Sun, Star } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export function Hero() {
@@ -7,7 +7,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative pt-20 pb-16 md:pt-32 md:pb-24 px-4 overflow-hidden">
+    <section className="relative pt-10 pb-12 md:pt-32 md:pb-24 px-4 overflow-hidden">
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
         <div className="absolute -top-[20%] -right-[10%] w-[70%] h-[70%] rounded-full bg-brand-base blur-3xl opacity-50" />
         <div className="absolute -bottom-[20%] -left-[10%] w-[60%] h-[60%] rounded-full bg-brand-rose/10 blur-3xl" />
@@ -19,14 +19,11 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <span className="inline-block py-1 px-3 rounded-full bg-brand-rose/20 text-brand-rose-dark text-sm font-medium mb-6">
-            Consultoria Digital Maquiagem na Cartela
-          </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-brand-dark leading-tight mb-6 text-balance max-w-4xl mx-auto">
-            Descubra quais maquiagens combinam com sua <span className="font-accent text-5xl md:text-7xl lg:text-8xl text-brand-rose-dark font-normal lowercase tracking-tight inline-block translate-y-2">cartela</span> antes de gastar dinheiro comprando errado
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-bold text-brand-dark leading-[1.1] mb-4 md:mb-6 text-balance max-w-4xl mx-auto tracking-tight">
+            Pare de gastar dinheiro com produto errado! Descubra quais maquiagens valorizam sua <span className="font-accent text-5xl md:text-7xl lg:text-8xl text-brand-rose-dark font-normal lowercase tracking-tighter inline-block translate-y-1 md:translate-y-2">cartela</span>
           </h1>
-          <p className="text-lg md:text-xl text-brand-brown mb-10 max-w-2xl mx-auto leading-relaxed">
-            Responda uma avaliação rápida e receba um parecer personalizado com cores, recomendações e orientações de compra para valorizar a sua beleza natural.
+          <p className="text-[16px] md:text-xl text-brand-brown mb-8 max-w-2xl mx-auto leading-relaxed">
+            Responda uma análise rápida e receba um <strong>parecer digital personalizado</strong> direto no celular. Descubra suas melhores cores, categorias e indicações de produtos para comprar maquiagem com total segurança.
           </p>
         </motion.div>
 
@@ -34,22 +31,61 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="w-full max-w-sm mx-auto mb-12"
+          className="w-full max-w-sm mx-auto mb-10 md:mb-16"
         >
           <button
             onClick={scrollToPricing}
-            className="w-full bg-brand-rose-dark hover:bg-brand-dark text-white font-medium text-lg py-4 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+            className="w-full bg-brand-rose-dark hover:bg-brand-dark text-white font-medium text-[17px] md:text-lg py-3.5 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
             Quero minha consultoria por R$37
           </button>
           
-          <div className="flex flex-wrap justify-center gap-4 mt-6 text-sm text-brand-brown">
-            <div className="flex items-center gap-1.5"><Clock size={16} className="text-brand-rose-dark" /> Acesso imediato</div>
-            <div className="flex items-center gap-1.5"><Smartphone size={16} className="text-brand-rose-dark" /> Funciona no celular</div>
-            <div className="flex items-center gap-1.5"><Sparkles size={16} className="text-brand-rose-dark" /> Parecer personalizado</div>
-            <div className="flex items-center gap-1.5"><ShieldCheck size={16} className="text-brand-rose-dark" /> Garantia de 7 dias</div>
+          <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-4 mt-5 text-[13px] md:text-sm text-brand-brown">
+            <div className="flex items-center gap-1.5"><Clock size={14} className="text-brand-rose-dark md:w-4 md:h-4" /> Acesso imediato</div>
+            <div className="flex items-center gap-1.5"><Smartphone size={14} className="text-brand-rose-dark md:w-4 md:h-4" /> Funciona no celular</div>
+            <div className="flex items-center gap-1.5"><Sparkles size={14} className="text-brand-rose-dark md:w-4 md:h-4" /> Parecer baseado nas suas respostas</div>
+            <div className="flex items-center gap-1.5"><ShieldCheck size={14} className="text-brand-rose-dark md:w-4 md:h-4" /> Garantia de 7 dias</div>
           </div>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="w-full"
+        >
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-6 max-w-3xl mx-auto text-left sm:text-center">
+            <div className="flex sm:flex-col items-center sm:items-center gap-4 sm:gap-3 bg-white/60 p-4 rounded-2xl border border-brand-base">
+              <div className="w-12 h-12 rounded-full bg-brand-rose/20 flex items-center justify-center text-brand-rose-dark shrink-0 shadow-sm">
+                <BookOpen size={22} />
+              </div>
+              <div>
+                <strong className="block text-brand-dark font-serif text-lg mb-0.5">Seu Guia de Bolso</strong>
+                <span className="text-sm text-brand-brown leading-snug block">Consulte as cores pelo celular antes de qualquer compra.</span>
+              </div>
+            </div>
+            <div className="flex sm:flex-col items-center sm:items-center gap-4 sm:gap-3 bg-white/60 p-4 rounded-2xl border border-brand-base">
+              <div className="w-12 h-12 rounded-full bg-brand-rose/20 flex items-center justify-center text-brand-rose-dark shrink-0 shadow-sm">
+                <Sun size={22} />
+              </div>
+              <div>
+                <strong className="block text-brand-dark font-serif text-lg mb-0.5">Make do Dia a Dia</strong>
+                <span className="text-sm text-brand-brown leading-snug block">Monte uma necessaire inteligente sem desperdícios.</span>
+              </div>
+            </div>
+            <div className="flex sm:flex-col items-center sm:items-center gap-4 sm:gap-3 bg-white/60 p-4 rounded-2xl border border-brand-base">
+              <div className="w-12 h-12 rounded-full bg-brand-rose/20 flex items-center justify-center text-brand-rose-dark shrink-0 shadow-sm">
+                <Star size={22} />
+              </div>
+              <div>
+                <strong className="block text-brand-dark font-serif text-lg mb-0.5">Ocasiões Especiais</strong>
+                <span className="text-sm text-brand-brown leading-snug block">Saiba exatamente quais tons usar para brilhar.</span>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+
 
       </div>
     </section>

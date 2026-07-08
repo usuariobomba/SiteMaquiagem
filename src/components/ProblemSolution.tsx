@@ -1,27 +1,27 @@
 import { Check, Sparkles, Target, Ban, ListOrdered, ShoppingBag, Smartphone } from 'lucide-react';
 
 const personas = [
-  "Você já comprou batom, blush ou base e depois sentiu que a cor não combinava",
-  "Você já fez análise de coloração, mas ainda fica perdida na hora de comprar maquiagem",
-  "Você tem produtos parados na gaveta porque comprou por impulso",
-  "Você sente que algumas maquiagens deixam seu rosto apagado, pesado ou estranho",
-  "Você quer montar uma necessaire mais inteligente sem gastar testando várias opções",
-  "Você quer entender melhor quais tons valorizam sua beleza natural",
-  "Você não quer fazer um curso de maquiagem, só quer uma orientação prática para comprar melhor"
+  "Você já comprou uma maquiagem linda na embalagem, mas que em você ficou estranha",
+  "Você tem batons, blushes ou bases parados porque quase nunca consegue usar",
+  "Você já fez análise de coloração, mas ainda trava na hora de comprar maquiagem",
+  "Você sente que alguns tons deixam seu rosto apagado, pesado ou amarelado",
+  "Você compra por impulso e depois percebe que a cor não combina com sua beleza",
+  "Você quer montar uma necessaire mais inteligente, com produtos que realmente fazem sentido",
+  "Você não quer fazer um curso de maquiagem — só quer uma orientação prática para comprar melhor"
 ];
 
 const deliverables = [
   {
     icon: <Target className="text-brand-rose-dark mb-4" size={32} />,
-    title: "1. Avaliação de Beleza",
-    desc: "Um questionário rápido para entender sua cartela, subtom, estilo de maquiagem, dificuldades e objetivo principal.",
-    benefit: "A experiência fica mais personalizada e direcionada."
+    title: "1. Análise Guiada de Beleza",
+    desc: "Um mapeamento rápido para entender sua cartela, subtom e dificuldades. Suas respostas moldam o seu resultado.",
+    benefit: "A experiência é personalizada com base nas suas respostas."
   },
   {
     icon: <Sparkles className="text-brand-rose-dark mb-4" size={32} />,
-    title: "2. Parecer Personalizado",
-    desc: "Um resultado com orientações sobre as cores que tendem a valorizar sua beleza.",
-    benefit: "Mais clareza antes de comprar maquiagem."
+    title: "2. Parecer Digital Personalizado",
+    desc: "Um parecer exclusivo, liberado no seu aplicativo, revelando quais cores e tons harmonizam com você.",
+    benefit: "Mais clareza e segurança na hora de escolher a maquiagem."
   },
   {
     icon: <Check className="text-brand-rose-dark mb-4" size={32} />,
@@ -43,9 +43,9 @@ const deliverables = [
   },
   {
     icon: <ShoppingBag className="text-brand-rose-dark mb-4" size={32} />,
-    title: "6. Lista curada de produtos",
-    desc: "Sugestões de produtos nacionais e importados compatíveis com a cartela.",
-    benefit: "Economizar tempo na hora de escolher."
+    title: "6. Lista Curada de Produtos Compatíveis com seu Perfil",
+    desc: "Sugestões de produtos nacionais e importados alinhados às respostas da sua análise, para facilitar sua escolha na hora de comprar.",
+    benefit: "Você economiza tempo pesquisando e consegue comparar opções com mais clareza antes de comprar."
   }
 ];
 
@@ -75,10 +75,10 @@ export function ProblemSolution() {
       <section className="py-20 px-4 bg-brand-base/30">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-4 max-w-2xl mx-auto text-balance">
-            O que você recebe dentro da Consultoria Digital <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal inline-block translate-y-1 block mt-2">Maquiagem na Cartela</span>
+            O que você destrava dentro do aplicativo <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal inline-block translate-y-1 block mt-2">Maquiagem na Cartela</span>
           </h2>
           <p className="text-center text-brand-brown mb-16 max-w-xl mx-auto">
-            Uma entrega direta, prática e focada em facilitar sua vida na hora de comprar.
+            Uma entrega 100% digital, prática e ultra-personalizada baseada nas suas respostas.
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -102,20 +102,20 @@ export function ProblemSolution() {
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-24">
           <div className="flex-1 text-center md:text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-base text-brand-brown text-sm font-medium mb-6">
-              <Smartphone size={16} /> 100% Digital
+              <Smartphone size={16} /> Aplicativo Web Exclusivo
             </div>
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 text-balance">
-              Sua consultoria sempre com você, direto no <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal lowercase inline-block translate-y-2">celular</span>
+              Seu parecer sempre com você, direto no <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal lowercase inline-block translate-y-2">celular</span>
             </h2>
             <p className="text-lg text-brand-brown mb-8 leading-relaxed">
-              Depois da compra, você recebe o acesso e pode consultar seu parecer sempre que quiser: em casa, antes de comprar online ou até mesmo dentro da loja de maquiagem para conferir uma cor.
+              Depois da compra, você recebe acesso ao aplicativo web da consultoria. Seu parecer fica salvo para consultar em casa, antes de comprar online ou até na loja.
             </p>
             <ul className="space-y-4 text-left inline-block md:block">
               {[
-                "Não precisa imprimir nada",
-                "Pode acessar quando quiser",
-                "Fácil de consultar antes de comprar",
-                "Ideal para usar na loja ou comprando online"
+                "Acesse pelo navegador, sem precisar baixar aplicativo",
+                "Consulte suas cores recomendadas quando quiser",
+                "Veja o que observar antes de comprar batom, blush, base ou sombra",
+                "Use seu checklist para evitar compras por impulso"
               ].map((benefit, i) => (
                 <li key={i} className="flex items-center gap-3 text-brand-dark/90 font-medium">
                   <Check size={20} className="text-brand-rose-dark shrink-0" strokeWidth={3} />

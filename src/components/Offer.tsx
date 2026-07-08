@@ -54,7 +54,8 @@ export function Offer() {
               </div>
               
               <ul className="space-y-4 mb-10 text-brand-dark/90">
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Acesso à Avaliação de Beleza</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Análise Guiada de Beleza</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Parecer inicial da sua cartela</span></li>
               </ul>
 
               <a href="https://pay.lowify.com.br/go.php?offer=vipzfqw" className="block text-center w-full py-4 px-6 rounded-full border-2 border-brand-dark text-brand-dark font-medium hover:bg-brand-dark hover:text-white transition-colors">
@@ -79,13 +80,10 @@ export function Offer() {
               </div>
 
               <ul className="space-y-4 mb-10 text-brand-dark/90">
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold">Parecer personalizado completo</span></li>
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Direcionamento por categoria (batom, blush, sombra, iluminador, contorno, base)</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold">Recomendações por categoria</span></li>
                 <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Plano de compra inteligente</span></li>
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Lista curada de produtos nacionais e importados</span></li>
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold text-brand-rose-dark">Bônus: Checklist da Necessaire Inteligente</span></li>
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold text-brand-rose-dark">Bônus: Guia Rápido de Bases e Subtons</span></li>
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold text-brand-rose-dark">Bônus: Inspirações de Makes por Cartela</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Lista curada de produtos</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold text-brand-rose-dark">Bônus Exclusivos</span></li>
               </ul>
 
               <a href="https://pay.lowify.com.br/checkout.php?product_id=fp4rJP" className="block text-center w-full py-4 px-6 rounded-full bg-brand-rose-dark text-white font-medium shadow-lg hover:bg-brand-dark transition-colors transform hover:-translate-y-1 duration-300">

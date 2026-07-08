@@ -3,15 +3,23 @@ import { ChevronDown, ArrowRight } from 'lucide-react';
 const faqs = [
   {
     q: "Preciso saber minha cartela para usar?",
-    a: "O ideal é que você já saiba ou tenha uma noção da sua cartela para receber recomendações mais precisas. Mesmo assim, se ainda tiver dúvida, a consultoria pode te dar uma orientação inicial mais segura."
+    a: "O ideal é que você já saiba ou tenha uma noção da sua cartela para receber um parecer mais preciso. Se ainda tiver dúvida, a consultoria também pode te ajudar com uma orientação inicial, mas ela não substitui uma análise completa de coloração pessoal."
   },
   {
     q: "Vou receber maquiagens em casa?",
-    a: "Não. A oferta é uma consultoria digital. Você recebe orientações, parecer personalizado, lista curada e direcionamento para comprar maquiagem com mais segurança. Os produtos físicos não estão inclusos."
+    a: "Não. A consultoria é 100% digital. Você recebe acesso ao aplicativo, parecer personalizado, orientações de cores, checklist e sugestões de produtos. Nenhum produto físico está incluso."
   },
   {
     q: "Como recebo o acesso?",
-    a: "Após a confirmação da compra, você recebe as instruções de acesso no seu e-mail. O conteúdo pode ser acessado pelo celular, quando e onde quiser."
+    a: "Após a confirmação da compra, você recebe as instruções de acesso no e-mail informado no pagamento. O material pode ser acessado pelo celular, direto pelo navegador."
+  },
+  {
+    q: "Funciona para qualquer cartela?",
+    a: "Sim, a consultoria foi pensada para orientar mulheres de diferentes cartelas e subcartelas. As recomendações mudam de acordo com as respostas preenchidas na avaliação."
+  },
+  {
+    q: "Por quanto tempo tenho acesso?",
+    a: "Você tem acesso vitalício para consultar seu parecer sempre que quiser, direto pelo celular."
   }
 ];
 
@@ -53,22 +61,22 @@ export function Closing() {
             Pronta para comprar maquiagem com mais <span className="font-accent text-5xl md:text-7xl text-brand-rose font-normal lowercase inline-block translate-y-2">segurança</span>?
           </h2>
           <p className="text-lg text-white/80 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Com a Consultoria Digital Maquiagem na Cartela, você responde uma avaliação rápida e recebe um parecer personalizado com cores, orientações e recomendações para escolher maquiagens mais alinhadas com sua cartela e sua beleza natural.
+            Com a Consultoria Digital Maquiagem na Cartela, você responde uma análise guiada e recebe um parecer personalizado com cores, orientações e sugestões para escolher maquiagens mais alinhadas com sua cartela e sua beleza natural.
           </p>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 mb-12 text-left max-w-3xl mx-auto backdrop-blur-sm">
-            <h3 className="font-bold text-xl mb-6 text-center text-brand-rose">Tudo que você vai receber:</h3>
+            <h3 className="font-bold text-xl mb-6 text-center text-brand-rose">Você recebe:</h3>
             <ul className="grid md:grid-cols-2 gap-y-4 gap-x-8 text-white/90 font-medium">
-              <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Avaliação de Beleza</li>
+              <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Análise Guiada de Beleza</li>
               <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Parecer Personalizado</li>
-              <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Direcionamento por categoria</li>
+              <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Direcionamento para batom, blush, sombra, base, contorno e iluminador</li>
               <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Cores recomendadas</li>
               <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Cores que merecem atenção</li>
               <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Plano de compra inteligente</li>
               <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Lista curada de produtos</li>
               <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Checklist da necessaire</li>
-              <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Guia rápido de bases</li>
-              <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Inspirações de makes</li>
+              <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Guia rápido de bases e subtons</li>
+              <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Inspirações de makes por cartela</li>
               <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Acesso pelo celular</li>
               <li className="flex gap-3 items-center"><div className="w-1.5 h-1.5 rounded-full bg-brand-rose-dark" /> Garantia de 7 dias</li>
             </ul>
