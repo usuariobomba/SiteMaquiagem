@@ -80,10 +80,13 @@ export function Offer() {
               </div>
 
               <ul className="space-y-4 mb-10 text-brand-dark/90">
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold">Recomendações por categoria</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold">Parecer Personalizado Completo</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Direcionamento para batom, blush, sombra, base, contorno e iluminador</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Indicação das suas melhores cores</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Alerta de cores que merecem atenção</span></li>
                 <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Plano de compra inteligente</span></li>
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Lista curada de produtos</span></li>
-                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold text-brand-rose-dark">Bônus Exclusivos</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span>Lista curada de produtos (nacionais e importados)</span></li>
+                <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold text-brand-rose-dark">3 Bônus Exclusivos inclusos</span></li>
               </ul>
 
               <a href="https://pay.lowify.com.br/checkout.php?product_id=fp4rJP" className="block text-center w-full py-4 px-6 rounded-full bg-brand-rose-dark text-white font-medium shadow-lg hover:bg-brand-dark transition-colors transform hover:-translate-y-1 duration-300">
