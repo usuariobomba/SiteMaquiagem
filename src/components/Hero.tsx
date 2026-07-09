@@ -1,7 +1,10 @@
-import { ShieldCheck, Smartphone, Sparkles, Clock, BookOpen, Sun, Star } from 'lucide-react';
+import { useState } from 'react';
+import { ShieldCheck, Smartphone, Sparkles, Clock, BookOpen, Sun, Star, Play } from 'lucide-react';
 import { motion } from 'motion/react';
 
 export function Hero() {
+  const [playVideo, setPlayVideo] = useState(false);
+
   const scrollToPricing = () => {
     document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -36,18 +39,41 @@ export function Hero() {
           {/* Wistia Video Embed */}
           <div className="wistia_responsive_padding" style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
             <div className="wistia_responsive_wrapper" style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}>
-              <iframe 
-                src="https://fast.wistia.net/embed/iframe/gj8ep6i6sg?web_component=true&seo=true" 
-                title="demo Video" 
-                allow="autoplay; fullscreen" 
-                allowtransparency="true" 
-                frameBorder="0" 
-                scrolling="no" 
-                className="wistia_embed" 
-                name="wistia_embed" 
-                width="100%" 
-                height="100%"
-              ></iframe>
+              {playVideo ? (
+                <iframe 
+                  src="https://fast.wistia.net/embed/iframe/gj8ep6i6sg?web_component=true&seo=true&autoplay=true" 
+                  title="demo Video" 
+                  allow="autoplay; fullscreen" 
+                  allowtransparency="true" 
+                  frameBorder="0" 
+                  scrolling="no" 
+                  className="wistia_embed" 
+                  name="wistia_embed" 
+                  width="100%" 
+                  height="100%"
+                ></iframe>
+              ) : (
+                <button 
+                  onClick={() => setPlayVideo(true)}
+                  className="absolute inset-0 w-full h-full bg-gradient-to-tr from-brand-dark to-brand-rose-dark/95 flex flex-col items-center justify-center p-4 text-white group cursor-pointer transition-colors duration-300 select-none"
+                  aria-label="Assistir demonstração"
+                >
+                  <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                  
+                  {/* Pulsating Play Button */}
+                  <div className="w-14 h-14 rounded-full bg-white text-brand-rose-dark flex items-center justify-center shadow-lg group-hover:scale-110 group-hover:bg-brand-rose group-hover:text-white transition-all duration-300 relative z-10">
+                    <Play size={24} className="fill-current translate-x-0.5" />
+                    <span className="absolute inset-0 rounded-full bg-white/30 animate-ping"></span>
+                  </div>
+                  
+                  <span className="mt-3 font-semibold text-sm tracking-wide relative z-10 text-brand-base group-hover:text-white transition-colors">
+                    Assistir Demonstração
+                  </span>
+                  <span className="text-[11px] text-white/60 mt-0.5 relative z-10">
+                    Vídeo rápido de 1 minuto
+                  </span>
+                </button>
+              )}
             </div>
           </div>
         </motion.div>
