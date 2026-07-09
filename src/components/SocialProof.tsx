@@ -11,10 +11,10 @@ export function SocialProof() {
           
           <div className="grid md:grid-cols-2 gap-8 items-start max-w-4xl mx-auto">
             <div className="rounded-3xl overflow-hidden shadow-lg border border-brand-base">
-              <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/v1783536453/nova-paigina-de-vendas-10-1-Yyv0OeyKMLiorpDk_ukitfz.avif" alt="Depoimento de cliente" className="w-full h-auto" />
+              <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/q_auto,f_auto,w_800/v1783536453/nova-paigina-de-vendas-10-1-Yyv0OeyKMLiorpDk_ukitfz.avif" alt="Depoimento de cliente" width={800} height={1200} loading="lazy" className="w-full h-auto" />
             </div>
             <div className="rounded-3xl overflow-hidden shadow-lg border border-brand-base">
-              <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/v1783536452/4-2-AVLaeOWPEJsvpo8k-666x1024_hp5jan.avif" alt="Depoimento de cliente" className="w-full h-auto" />
+              <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/q_auto,f_auto,w_800/v1783536452/4-2-AVLaeOWPEJsvpo8k-666x1024_hp5jan.avif" alt="Depoimento de cliente" width={800} height={1230} loading="lazy" className="w-full h-auto" />
             </div>
           </div>
           <p className="text-center text-sm text-brand-brown mt-10 opacity-80">
@@ -26,7 +26,7 @@ export function SocialProof() {
       <section className="py-24 px-4 bg-brand-base/40">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           <div className="w-56 md:w-72 aspect-[3/4] rounded-[2rem] md:rounded-[3rem] bg-brand-rose/20 shrink-0 overflow-hidden border-8 border-white shadow-xl relative rotate-3">
-            <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/v1783631279/avatar_tqjbny.png" alt="Camila Siqueira" className="w-full h-full object-cover object-top" />
+            <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/q_auto,f_auto,w_600/v1783631279/avatar_tqjbny.png" alt="Camila Siqueira" width={600} height={800} loading="lazy" className="w-full h-full object-cover object-top" />
           </div>
           <div>
             <h2 className="text-3xl font-serif font-bold mb-6">Quem está por trás da Consultoria <span className="font-accent text-4xl md:text-5xl text-brand-rose-dark font-normal block mt-1">Maquiagem na Cartela</span></h2>
@@ -49,8 +49,11 @@ export function SocialProof() {
                   
                   {/* Screen Content */}
                   <img 
-                    src="https://res.cloudinary.com/dqwkvuubt/image/upload/v1783631622/instacamila_uxnt2r.png" 
+                    src="https://res.cloudinary.com/dqwkvuubt/image/upload/q_auto,f_auto,w_400/v1783631622/instacamila_uxnt2r.png" 
                     alt="Instagram da Camila Siqueira" 
+                    width={400}
+                    height={860}
+                    loading="lazy"
                     className="w-full h-auto block" 
                   />
                 </div>
