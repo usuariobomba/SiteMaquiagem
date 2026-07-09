@@ -26,7 +26,7 @@ export function SocialProof() {
       <section className="py-24 px-4 bg-brand-base/40">
         <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-16">
           <div className="w-56 md:w-72 aspect-[3/4] rounded-[2rem] md:rounded-[3rem] bg-brand-rose/20 shrink-0 overflow-hidden border-8 border-white shadow-xl relative rotate-3">
-            <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/v1783536179/Screenshot_2_rjc2j2.png" alt="Camila Siqueira" className="w-full h-full object-cover object-top" />
+            <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/v1783631279/avatar_tqjbny.png" alt="Camila Siqueira" className="w-full h-full object-cover object-top" />
           </div>
           <div>
             <h2 className="text-3xl font-serif font-bold mb-6">Quem está por trás da Consultoria <span className="font-accent text-4xl md:text-5xl text-brand-rose-dark font-normal block mt-1">Maquiagem na Cartela</span></h2>
@@ -40,6 +40,21 @@ export function SocialProof() {
               <p>
                 Minha missão é ajudar você a comprar maquiagem com mais clareza, menos desperdício e mais segurança.
               </p>
+            </div>
+            <div className="mt-10 flex justify-center w-full">
+              <a href="https://instagram.com/camilasiqueira" target="_blank" rel="noopener noreferrer" className="inline-block transform rotate-[-4deg] hover:rotate-0 hover:scale-105 transition-all duration-500">
+                <div className="relative w-[180px] md:w-[220px] bg-white rounded-[2rem] md:rounded-[2.5rem] border-[6px] md:border-[8px] border-zinc-800 shadow-xl overflow-hidden ring-1 ring-zinc-900/10">
+                  {/* Notch */}
+                  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[40%] h-4 md:h-5 bg-zinc-800 rounded-b-xl md:rounded-b-2xl z-10"></div>
+                  
+                  {/* Screen Content */}
+                  <img 
+                    src="https://res.cloudinary.com/dqwkvuubt/image/upload/v1783631622/instacamila_uxnt2r.png" 
+                    alt="Instagram da Camila Siqueira" 
+                    className="w-full h-auto block" 
+                  />
+                </div>
+              </a>
             </div>
           </div>
         </div>
