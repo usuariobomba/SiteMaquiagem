@@ -28,6 +28,26 @@ export function Hero() {
         </motion.div>
 
         <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="w-full max-w-[240px] md:max-w-[280px] mx-auto mb-10 md:mb-12 rounded-2xl overflow-hidden shadow-2xl border-[4px] md:border-[6px] border-white/60 bg-brand-base relative aspect-[9/16]"
+        >
+          {/* O vídeo será carregado aqui. Instructing user to upload demo.mp4 */}
+          <video 
+            src="/demo.mp4?v=2" 
+            controls 
+            playsInline 
+            autoPlay 
+            muted 
+            loop 
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            Seu navegador não suporta a exibição de vídeos.
+          </video>
+        </motion.div>
+
+        <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
