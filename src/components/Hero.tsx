@@ -31,20 +31,25 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="w-full max-w-[240px] md:max-w-[280px] mx-auto mb-10 md:mb-12 rounded-2xl overflow-hidden shadow-2xl border-[4px] md:border-[6px] border-white/60 bg-brand-base relative aspect-[9/16]"
+          className="w-full max-w-[240px] md:max-w-[280px] mx-auto mb-10 md:mb-12 rounded-2xl overflow-hidden shadow-2xl border-[4px] md:border-[6px] border-white/60 bg-brand-base"
         >
-          {/* O vídeo será carregado aqui. Instructing user to upload demo.mp4 */}
-          <video 
-            src="/demo.mp4?v=2" 
-            controls 
-            playsInline 
-            autoPlay 
-            muted 
-            loop 
-            className="absolute inset-0 w-full h-full object-cover"
-          >
-            Seu navegador não suporta a exibição de vídeos.
-          </video>
+          {/* Wistia Video Embed */}
+          <div className="wistia_responsive_padding" style={{ padding: '177.78% 0 0 0', position: 'relative' }}>
+            <div className="wistia_responsive_wrapper" style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}>
+              <iframe 
+                src="https://fast.wistia.net/embed/iframe/gj8ep6i6sg?web_component=true&seo=true" 
+                title="demo Video" 
+                allow="autoplay; fullscreen" 
+                allowtransparency="true" 
+                frameBorder="0" 
+                scrolling="no" 
+                className="wistia_embed" 
+                name="wistia_embed" 
+                width="100%" 
+                height="100%"
+              ></iframe>
+            </div>
+          </div>
         </motion.div>
 
         <motion.div
