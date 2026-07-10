@@ -88,7 +88,7 @@ export function Closing() {
           >
             Quero minha consultoria agora <ArrowRight size={24} />
           </button>
-          <p className="text-brand-rose font-medium">Acesso completo por apenas R$17</p>
+          <p className="text-brand-rose font-medium">Acesso completo por apenas R$37</p>
         </div>
       </section>
 

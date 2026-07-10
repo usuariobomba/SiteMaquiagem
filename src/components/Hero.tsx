@@ -88,7 +88,7 @@ export function Hero() {
             onClick={scrollToPricing}
             className="w-full bg-brand-rose-dark hover:bg-brand-dark text-white font-medium text-[17px] md:text-lg py-3.5 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
-            Quero minha consultoria por R$17
+            Quero minha consultoria por R$37
           </button>
           
           <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 md:gap-4 mt-5 text-[13px] md:text-sm text-brand-brown">

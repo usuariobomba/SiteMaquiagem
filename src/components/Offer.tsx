@@ -55,8 +55,8 @@ export function Offer() {
               <div className="text-brand-brown mb-6 text-center">A experiência e orientação completas</div>
               
               <div className="mb-8 text-center">
-                <span className="text-brand-brown/60 text-sm line-through block mb-1">De R$ 37 por apenas</span>
-                <span className="text-5xl font-bold text-brand-rose-dark">R$ 17</span>
+                <span className="text-brand-brown/60 text-sm line-through block mb-1">De R$ 97 por apenas</span>
+                <span className="text-5xl font-bold text-brand-rose-dark">R$ 37</span>
               </div>
 
               <ul className="space-y-4 mb-10 text-brand-dark/90">
@@ -70,7 +70,7 @@ export function Offer() {
                 <li className="flex gap-3 items-start"><Check className="text-brand-rose-dark mt-1 shrink-0" size={18} /> <span className="font-semibold text-brand-rose-dark">3 Bônus Exclusivos inclusos</span></li>
               </ul>
 
-              <a href="https://pay.lowify.com.br/go.php?offer=vipzfqw" className="block text-center w-full py-4 px-6 rounded-full bg-brand-rose-dark text-white font-medium shadow-lg hover:bg-brand-dark transition-colors transform hover:-translate-y-1 duration-300">
+              <a href="https://pay.lowify.com.br/checkout.php?product_id=fp4rJP" className="block text-center w-full py-4 px-6 rounded-full bg-brand-rose-dark text-white font-medium shadow-lg hover:bg-brand-dark transition-colors transform hover:-translate-y-1 duration-300">
                 Quero o Acesso Completo
               </a>
             </div>
