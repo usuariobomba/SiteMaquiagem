@@ -26,44 +26,33 @@ const notifications: NotificationItem[] = [
 
 export function PurchaseNotifications() {
   const [currentNotification, setCurrentNotification] = useState<NotificationItem | null>(null);
-  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    // Initial delay before showing the first notification
-    const initialTimeout = setTimeout(() => {
-      showNextNotification();
-    }, 4000);
+    let index = 0;
+    let timeoutId: any;
 
-    return () => clearTimeout(initialTimeout);
-  }, []);
+    const cycle = () => {
+      // 1. Show the current notification
+      setCurrentNotification(notifications[index]);
 
-  const showNextNotification = () => {
-    setCurrentNotification(notifications[currentIndex]);
-    
-    // Auto-hide after 5 seconds
-    const hideTimeout = setTimeout(() => {
-      setCurrentNotification(null);
-      
-      // Update index for the next cycle
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % notifications.length);
+      // 2. Hide it after 5 seconds
+      timeoutId = setTimeout(() => {
+        setCurrentNotification(null);
 
-      // Schedule the next notification after 10-15 seconds of silence
-      const nextDelay = 8000 + Math.random() * 7000;
-      const nextTimeout = setTimeout(() => {
-        showNextNotification();
-      }, nextDelay);
+        // 3. Increment index for the next cycle
+        index = (index + 1) % notifications.length;
 
-      // Store the timeout ref to clean up if unmounted during silence
-      (window as any)._nextNotificationTimeout = nextTimeout;
-    }, 5000);
+        // 4. Wait for a random silence period (8 to 15 seconds) before showing the next one
+        const nextDelay = 8000 + Math.random() * 7000;
+        timeoutId = setTimeout(cycle, nextDelay);
+      }, 5000);
+    };
 
-    (window as any)._hideNotificationTimeout = hideTimeout;
-  };
+    // Start the first notification after 4 seconds
+    timeoutId = setTimeout(cycle, 4000);
 
-  useEffect(() => {
     return () => {
-      clearTimeout((window as any)._hideNotificationTimeout);
-      clearTimeout((window as any)._nextNotificationTimeout);
+      clearTimeout(timeoutId);
     };
   }, []);
 
