@@ -9,6 +9,7 @@ import { Offer } from './components/Offer';
 import { SocialProof } from './components/SocialProof';
 import { Closing } from './components/Closing';
 import { StickyCTA } from './components/StickyCTA';
+import { PurchaseNotifications } from './components/PurchaseNotifications';
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
       <SocialProof />
       <Closing />
       <StickyCTA />
+      <PurchaseNotifications />
     </div>
   );
 }

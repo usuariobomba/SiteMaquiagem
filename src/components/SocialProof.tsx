@@ -6,7 +6,7 @@ export function SocialProof() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-16 text-balance">
-            O que mulheres dizem depois de usar a <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal lowercase inline-block translate-y-2">consultoria</span>
+            O que mulheres dizem depois de usar o <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal lowercase inline-block translate-y-2">guia</span>
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8 items-start max-w-4xl mx-auto">
@@ -29,10 +29,10 @@ export function SocialProof() {
             <img src="https://res.cloudinary.com/dqwkvuubt/image/upload/q_auto,f_auto,w_600/v1783631279/avatar_tqjbny.png" alt="Camila Siqueira" width={600} height={800} loading="lazy" className="w-full h-full object-cover object-top" />
           </div>
           <div>
-            <h2 className="text-3xl font-serif font-bold mb-6">Quem está por trás da Consultoria <span className="font-accent text-4xl md:text-5xl text-brand-rose-dark font-normal block mt-1">Maquiagem na Cartela</span></h2>
+            <h2 className="text-3xl font-serif font-bold mb-6">Quem está por trás do Guia <span className="font-accent text-4xl md:text-5xl text-brand-rose-dark font-normal block mt-1">Maquiagem na Cartela</span></h2>
             <div className="space-y-4 text-brand-dark/80 leading-relaxed text-lg">
               <p>
-                Sou <strong>Camila Siqueira</strong>, especialista em coloração pessoal e beleza estratégica. Criei a Consultoria Digital Maquiagem na Cartela para ajudar mulheres que já se sentiram perdidas na hora de comprar maquiagem e querem fazer escolhas mais conscientes, práticas e alinhadas com sua beleza natural.
+                Sou <strong>Camila Siqueira</strong>, especialista em coloração pessoal e beleza estratégica. Criei o Guia Digital Maquiagem na Cartela para ajudar mulheres que já se sentiram perdidas na hora de comprar maquiagem e querem fazer escolhas mais conscientes, práticas e alinhadas com sua beleza natural.
               </p>
               <p>
                 Depois de observar que muitas mulheres até conhecem sua cartela, mas continuam errando na escolha de batom, blush, base e sombras, desenvolvi uma forma simples de transformar a teoria da coloração em orientação prática de compra.
@@ -71,7 +71,7 @@ export function SocialProof() {
           <div>
             <h3 className="text-2xl font-serif font-bold mb-3">Teste por 7 dias sem risco</h3>
             <p className="text-brand-brown mb-5 leading-relaxed">
-              Você tem 7 dias para acessar a consultoria e conhecer o material. Se sentir que o conteúdo não faz sentido para você, pode solicitar o reembolso dentro do prazo de garantia.
+              Você tem 7 dias para acessar o guia e conhecer o material. Se sentir que o conteúdo não faz sentido para você, pode solicitar o reembolso dentro do prazo de garantia.
             </p>
             <ul className="flex flex-wrap gap-5 text-sm font-semibold text-brand-dark/80">
               <li className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-full border border-brand-base shadow-sm"><ShieldAlert size={16} className="text-brand-rose-dark"/> Compra protegida</li>

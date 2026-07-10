@@ -41,7 +41,7 @@ export function StickyCTA() {
         onClick={scrollToPricing}
         className="pointer-events-auto bg-brand-dark hover:bg-brand-rose-dark text-white font-medium text-lg py-3 px-8 rounded-full shadow-[0_10px_40px_rgba(58,46,43,0.4)] transition-colors flex items-center gap-2 border border-white/10 backdrop-blur-md"
       >
-        Quero minha consultoria <ArrowRight size={20} />
+        Quero meu Guia <ArrowRight size={20} />
       </button>
     </motion.div>
   );

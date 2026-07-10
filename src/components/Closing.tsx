@@ -3,11 +3,11 @@ import { ChevronDown, ArrowRight } from 'lucide-react';
 const faqs = [
   {
     q: "Preciso saber minha cartela para usar?",
-    a: "O ideal é que você já saiba ou tenha uma noção da sua cartela para receber um parecer mais preciso. Se ainda tiver dúvida, a consultoria também pode te ajudar com uma orientação inicial, mas ela não substitui uma análise completa de coloração pessoal."
+    a: "O ideal é que você já saiba ou tenha uma noção da sua cartela para receber um parecer mais preciso. Se ainda tiver dúvida, o guia também pode te ajudar com uma orientação inicial, mas ele não substitui uma análise completa de coloração pessoal."
   },
   {
     q: "Vou receber maquiagens em casa?",
-    a: "Não. A consultoria é 100% digital. Você recebe acesso ao aplicativo, parecer personalizado, orientações de cores, checklist e sugestões de produtos. Nenhum produto físico está incluso."
+    a: "Não. O guia é 100% digital. Você recebe acesso ao aplicativo, parecer personalizado, orientações de cores, checklist e sugestões de produtos. Nenhum produto físico está incluso."
   },
   {
     q: "Como recebo o acesso?",
@@ -15,7 +15,7 @@ const faqs = [
   },
   {
     q: "Funciona para qualquer cartela?",
-    a: "Sim, a consultoria foi pensada para orientar mulheres de diferentes cartelas e subcartelas. As recomendações mudam de acordo com as respostas preenchidas na avaliação."
+    a: "Sim, o guia foi pensado para orientar mulheres de diferentes cartelas e subcartelas. As recomendações mudam de acordo com as respostas preenchidas na avaliação."
   },
   {
     q: "Por quanto tempo tenho acesso?",
@@ -61,7 +61,7 @@ export function Closing() {
             Pronta para comprar maquiagem com mais <span className="font-accent text-5xl md:text-7xl text-brand-rose font-normal lowercase inline-block translate-y-2">segurança</span>?
           </h2>
           <p className="text-lg text-white/80 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Com a Consultoria Digital Maquiagem na Cartela, você responde uma análise guiada e recebe um parecer personalizado com cores, orientações e sugestões para escolher maquiagens mais alinhadas com sua cartela e sua beleza natural.
+            Com o Guia Digital Maquiagem na Cartela, você responde uma análise guiada e recebe um parecer personalizado com cores, orientações e sugestões para escolher maquiagens mais alinhadas com sua cartela e sua beleza natural.
           </p>
 
           <div className="bg-white/5 border border-white/10 rounded-3xl p-8 mb-12 text-left max-w-3xl mx-auto backdrop-blur-sm">
@@ -86,7 +86,7 @@ export function Closing() {
             onClick={scrollToPricing}
             className="bg-brand-rose-dark hover:bg-white hover:text-brand-dark text-white font-semibold text-xl py-5 px-10 rounded-full shadow-[0_0_40px_rgba(181,127,119,0.3)] transition-all duration-300 transform hover:-translate-y-1 mb-6 flex items-center gap-3 mx-auto"
           >
-            Quero minha consultoria agora <ArrowRight size={24} />
+            Quero meu Guia agora <ArrowRight size={24} />
           </button>
           <p className="text-brand-rose font-medium">Acesso completo por apenas R$37</p>
         </div>

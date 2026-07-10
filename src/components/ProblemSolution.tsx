@@ -55,7 +55,7 @@ export function ProblemSolution() {
       <section className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-serif font-bold text-center mb-12 text-balance">
-            Essa consultoria é para <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal lowercase inline-block translate-y-2">você</span> se...
+            Esse guia é para <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal lowercase inline-block translate-y-2">você</span> se...
           </h2>
           <div className="bg-brand-light rounded-3xl p-8 md:p-12 shadow-sm border border-brand-base">
             <ul className="space-y-6">
@@ -108,7 +108,7 @@ export function ProblemSolution() {
               Seu parecer sempre com você, direto no <span className="font-accent text-5xl md:text-6xl text-brand-rose-dark font-normal lowercase inline-block translate-y-2">celular</span>
             </h2>
             <p className="text-lg text-brand-brown mb-8 leading-relaxed">
-              Depois da compra, você recebe acesso ao aplicativo web da consultoria. Seu parecer fica salvo para consultar em casa, antes de comprar online ou até na loja.
+              Depois da compra, você recebe acesso ao aplicativo web do guia. Seu parecer fica salvo para consultar em casa, antes de comprar online ou até na loja.
             </p>
             <ul className="space-y-4 text-left inline-block md:block">
               {[
